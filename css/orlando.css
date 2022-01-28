@@ -1,0 +1,413 @@
+@font-face {
+    font-family: 'OpenSans';
+    src: url("../fonts/Open_Sans/OpenSans-Regular.ttf");
+    font-size: 1em;
+}
+@font-face {
+    font-family: 'OpenSans-Light'; 
+    src: url("../fonts/Open_Sans/OpenSans-light.ttf");
+    font-size: 1em;
+}
+/* parte de cabeçalhos, bandeira dos times */
+header{
+    width: 100%;
+    height: 150px;
+    background-color: rgba(94, 41, 154, .8);
+    z-index: 2;
+    position: relative;
+    
+}
+header .container{
+    position: relative;
+    
+}
+header .header-black{
+    background-color: black;
+    height: 40px;
+}
+header .header-black li {
+    background-image: url("../img/clubes.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 4px 5px;
+}
+header .header-black li.club-01 {
+    background-position: 0px 0px;
+}
+header .header-black li.club-02{
+    background-position: -48px;
+}
+header .header-black li.club-03{
+    background-position: -90px;
+}
+header .header-black li.club-04{
+    background-position: -140px;
+}
+header .header-black li.club-05{
+    background-position: -190px;
+}
+header .header-black li.club-06{
+    background-position: -240px;
+}
+header .header-black li.club-07{
+    background-position: -290px;
+}
+header .header-black li.club-08{
+    background-position: -335px;
+}
+header .header-black li.club-09{
+    background-position: -380px;
+}
+header .header-black li.club-10{
+    background-position: -430px;
+}
+header .header-black li.club-11{
+    background-position: -480px;
+}
+header .header-black li.club-12{
+    background-position: -530px;
+}
+header .header-black li.club-13{
+    background-position: -580px;
+}
+header .header-black li.club-14{
+    background-position: -630px;
+}
+header .header-black li.club-15{
+    background-position: -675px;
+}
+header .header-black li.club-16{
+    background-position: -722px;
+}
+header .header-black li.club-17{
+    background-position: -765px;
+}
+header .header-black li.club-18{
+    background-position: -807px;
+}
+header .header-black li.club-19{
+    background-position: -856px;
+}
+header .header-black li.club-20{
+    background-position: -948px;
+}
+header .header-black li.club-21{
+    background-position: -999px;
+}
+
+header .header-black li a{
+    width: 32px;
+    height: 32px;
+    display: block;
+}
+header #logotipo {
+    position: absolute;
+    top: 20px;
+    z-index: 5;
+}
+/*Barra de pesquisa, cores e botoes */
+#menu li {
+    margin: 6px;
+    display: inline-block;
+    font-family: "OpenSans";
+}
+#menu li.search{
+    width: 182px;
+    transition-timing-function: cubic-bezier(1,-.91,1.45, 1);
+    transition-duration: 1s;
+}
+
+#menu li.search.ativo{
+    width: 300px;
+}
+#menu li.search input{
+    background-color: #5C2D90;
+    color: white;
+    border: none;
+    height: 30px;
+    line-height: 30px;
+    margin-left: auto;
+}
+#menu li.search.ativo input{
+    width: 300px;
+}
+#menu li.search ::-webkit-input-placeholder {
+    color: white;
+}
+#menu li.search button{
+    background: none;
+    border: none;
+    position: absolute;
+    line-height: 1;
+    right: 2px;
+    top: 0;
+}
+#menu li.search button i{
+    font-size: 15px;
+    color: rgba(255, 255, 255, .5 ); 
+}
+
+#menu li a{
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 25px;
+    text-decoration: none;
+    
+}
+
+
+
+/*Banner, imagem da bola gigante no meio da sua tela kk*/
+#banner{
+    width: 100%;
+    height: 728px;
+    position: relative;
+    background: url(../img/banner.jpg) no-repeat;
+    top: -110px;
+    background-position: 0 -100px;
+    background-size: cover;
+}
+#banner h1{
+    color: white;
+    top: 300px;
+    position: relative;
+    font-size: 85px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .45) ;
+    font-family: 'OpenSans-Light';
+    margin-left: 50px;
+    transition: 1s;
+
+}
+#banner h1.efeito{
+    color:red ;
+    font-size: 12em; 
+    
+}
+
+#banner h1 small{
+        font-size: 32px;
+        display: block;
+        color: white;
+        font-family: 'OpenSans';
+        font-weight:bold;
+}
+/*Parte de noticias, onde o goleiro se repete 4x*/
+#news{
+    position: relative;
+    top: -110px;
+}
+
+#news h2{
+    color: #5E2799;
+    font-family: "OpenSans-Light";
+    font-size: 48px;
+    text-transform: uppercase;
+    text-align: center;
+}
+#news hr{
+    border: #FDE192 solid 8px;
+    width: 200px;
+    margin: 0 auto;
+}
+#news .thumbnails{
+  margin-top: 20px;
+  
+}
+#news .thumbnails h3{
+    color: #5E299A;
+    font-size: 18px;
+    font-family: "OpenSans";
+    font-weight: bold;
+    margin-bottom: 0;
+}
+#news .thumbnails time{
+    color: #A7A;
+    font-size: 18px;
+    font-family: 'OpenSans';
+}
+#news .thumbnails .item-inner{
+    padding: 10px;
+}
+#news .thumbnails .item-inner img{
+    width: 100;
+}
+
+/*estatiscicas segunda barra roxa*/
+#estatisticas{
+    background-color: #5E299A;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+#estatisticas .row{
+    width: 100%;
+}
+#estatisticas p{
+    color: #FDE192;
+    text-transform: uppercase;
+    font-family: 'OpenSans-Light';
+    font-size: 64px;
+    margin-top: 16px;
+}
+#estatisticas p small{
+    color: #fff;
+    font-size: 24px;
+    display: block;
+}
+#call-to-action{
+    text-align: center;
+    margin-top: 105px;
+    
+}
+#call-to-action .row{
+    padding-top: 15px;
+    margin: 0px 340px;
+    
+}
+/*Mais informações sobre o time, compras e registros*/
+#call-to-action h2{
+    color: #5E2799;
+    font-family: "OpenSans-Light";
+    font-size: 48px;
+    text-align: center;
+}
+#call-to-action hr{
+    border: #FDE192 solid 8px;
+    width: 200px;
+    height: 0%;
+    margin: 0 auto;
+}
+#call-to-action p{
+    margin-top: 60px;
+    margin-bottom: 40px;
+    font-size: 14px;
+    color: #656565;
+    font-family: 'OpenSans';
+
+}
+#call-to-action .btn{
+    min-width: 164px;
+    height: 44px;
+    border-radius: 0;
+
+}
+/*Botoes, roxo e amarelo*/
+#call-to-action .btn-roxo{
+    color: #fff;
+    background-color: #5E299A;
+    border-color: #5e299a;
+    
+}
+#call-to-action .btn-amarelo{
+    color: #000;
+    background-color: #FDE192;
+    border-color: #FDE192;;
+
+}
+#call-to-action .row-max-400{
+    margin: 0 auto;
+    max-width: 400px;
+} 
+
+
+/*Rodape*/
+footer {
+    margin-top: 110px;
+}
+footer .row{
+    width: 100%;
+    margin-left: 0;
+    
+}
+footer .row p {
+    line-height: 25px;
+    margin-bottom: 0;
+    
+}
+footer .row-cinza-claro{
+      height: 200px;
+      background-color: #171f26;
+
+}
+footer .row-cinza-escuro{
+    height: 60px;
+    background-color:#11171D;
+    border-top: #242D37 1px solid;
+    
+}
+
+/*Copyright e quem criou, (Levy, caso n saiba)*/
+footer .float-md-start{
+    font-family: 'OpenSans';
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 0%;
+    float: left;
+}
+footer .text-roxo{
+    color: #623291;
+    font-family: 'OpenSans';
+    font-size: 14px;
+    float: right;
+}
+footer .logotipo{
+    margin-top:  28px;
+
+}
+/*blocos de informacao*/
+footer .popular,
+footer .links,
+footer .getin{
+    margin-top: 40px;
+
+}
+footer .row-cols h4 {
+    margin-top: 10px;
+    font-family: 'OpenSans';
+    font-size: 14px;
+    color: #fff;
+    padding-bottom: 17px;
+    border-bottom: #242D37 1px solid;
+}
+footer .row-cols h5{
+    font-family: 'Arial';
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 0;
+}
+footer .row-cols time{
+    font-family: 'Arial';
+    font-size: 14px;
+    color: #fde192;
+}
+footer .links a{
+    font-family: Arial;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+}
+/*Endereco e telefone*/
+footer .getin address,
+footer .getin a {
+    color:#666;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+footer .getin address span{
+    display: inline-block;
+}
+footer .getin address i{
+    position: relative;
+    top: -14px;
+}
+footer .getin i{
+    color: #9B9;
+    font-size: 20px;
+    margin:0 6px;
+}
+footer .getin p{
+    line-height: 20px;
+    color:#666;
+}
