@@ -16,11 +16,11 @@
 </head>
 
 <body>
-    <header class>
+    <header>
 
-        <div id="menu-mobile-mask" class="visible-xs"></div>
+        <div id="menu-mobile-mask" class=".d-block d-sm-none"></div>
 
-        <div id="menu-mobile" class="visible-xs">
+        <div id="menu-mobile" class=".d-block d-sm-none">
             <nav>
                 <ul class="list-unstyled">
                     <li><a href="videos.html">Videos</a></li>
@@ -41,8 +41,10 @@
         <div class="header-black">
 
             <div class="container">
-                <button id="bars" class="btn btn-default"> <i class="fas fa-bars"></i></button>
-                <button id="search" class="btn btn-default"> <i class="fas fa-search"></i></button>
+
+                <input type="search" id="input-search-mobile" class=".d-block d-sm-none" placeholder="search">
+                <button id="bars" type="button"> <i class="fas fa-bars"></i></button>
+                <button id="search" type="button"> <i class="fas fa-search"></i></button>
 
                 <ul class="float-end">
                     <!-- cabeçalho bandeira dos times e referencia com link-->

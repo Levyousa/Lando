@@ -1,6 +1,6 @@
 
 $(document).ready(function () {
-       $("#input-search").on("focus", function () {
+    $("#input-search").on("focus", function () {
 
         $("li.search").addClass("ativo");
     }).on("blur", function () {
@@ -27,6 +27,7 @@ $(document).ready(function () {
         }
 
     });
+    /*Setas das noticias*/
     var owl = $('.owl-carousel');
     owl.owlCarousel();
 
@@ -37,16 +38,27 @@ $(document).ready(function () {
     $('#seta-right').click(function () {
         owl.trigger('next.owl.carousel');
     });
-    $('#bars').click(function(){
+
+    /*botões no mobile*/
+    $('#bars').click(function () {
         $('header').toggleClass("open-menu");
-        
-    });
-    $('#close').click(function(){
-       $('header').removeClass("open-menu");
+
     });
 
+    $('#close, #menu-mobile-mask').click(function () {
+        $('header').removeClass("open-menu");
+    });
 
-    
+    $('#search').click(function () {
+        $('header').toggleClass("open-search");
+    });
+    /*
+    $('#search').click(function () {
+        $('header').removeClass("open-search");
+    });
+    */
+
+
 
 });
 

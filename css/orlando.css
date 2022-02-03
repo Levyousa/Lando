@@ -468,6 +468,6 @@ input#volume{
     margin:  5px;
     width:  260px;
 }
-#bars, #search, #seta-left, #seta-right, #menu-mobile{
+#bars, #search, #seta-left, #seta-right{
     display: none;
 }
