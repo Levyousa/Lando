@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
-     <!-- Scripts e links para criação do site--> 
+    <!-- Scripts e links para criação do site-->
     <meta charset="utf -8">
+    <meta name="viewport" content="width:device-width, initial-scale = 1">
     <title>Orlando City</title>
+    <link rel="stylesheet" href="lib/plyr/src/sass/plyr.scss">
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/orlando.css">
+    <link rel="stylesheet" href="css/orlando-mobile.css">
     <link rel="stylesheet" href="lib/owl.carousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="lib/owl.carousel/dist/assets/owl.theme.default.min.css">
     <script src="https://kit.fontawesome.com/f1b9615bd9.js" crossorigin="anonymous"></script>
- 
+
 </head>
 
 <body>
@@ -24,7 +27,7 @@
             <div class="container">
 
                 <ul class="float-end">
-                    <!-- cabeçalho bandeira dos times e referencia com link--> 
+                    <!-- cabeçalho bandeira dos times e referencia com link-->
                     <li class="club-01"><a href="#"></a></li>
                     <li class="club-02"><a href="#"></a></li>
                     <li class="club-03"><a href="#"></a></li>
@@ -35,7 +38,7 @@
                     <li class="club-08"><a href="#"></a></li>
                     <li class="club-09"><a href="#"></a></li>
                     <li class="club-10"><a href="#"></a></li>
-                    <li class="club-11"><a href="#"></a></li> 
+                    <li class="club-11"><a href="#"></a></li>
                     <li class="club-12"><a href="#"></a></li>
                     <li class="club-13"><a href="#"></a></li>
                     <li class="club-14"><a href="#"></a></li>
@@ -50,7 +53,7 @@
             </div>
 
         </div>
-<!-- Menu com as opções de compra, noticias e horários--> 
+        <!-- Menu com as opções de compra, noticias e horários-->
         <div class="container">
             <nav id="menu" class="float-end">
                 <ul>
@@ -89,21 +92,69 @@
                 </div>
 
                 <div class="row">
-                    <video src="mp4/highlights.mp4" controls poster="img/highlights.jpg " ></video>
+
+                    <video id="player" playinsline controls data-poster="../Orlando/img/high.jpg">
+                        <source src="../Orlando/mp4/highlights.mp4" type="video/mp4" />
+
+                    </video>
+
+                    <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+                    <button type="button" id="btn-play-pause" class="btn btn-success">Play</button>
+
                 </div>
             </div>
         </div>
+        <div id="news" class="container" style="top: 0">
+            <div>
+                <h2> Latest news</h2>
+                <hr>
+            </div>
+
+            <div class="row thumbnails owl-carousel owl-theme">
+                <!--Grids de noticias, dividido por 4-->
+                <div class="item" data-video="highlights">
+                    <div class="item-inner">
+                        <img src="img/high.jpg" alt="Noticia1">
+                        <h3> Highlights </h3>
+
+                    </div>
+                </div>
+                <div class="item" data-video="Orlando_City_Foundation_2015">
+                    <div class="item-inner">
+                        <img src="img/Orlando_City_Foundation_2015.jpg" alt="Noticia1">
+                        <h3> Orlando City Foundation </h3>
+
+                    </div>
+                </div>
+                <div class="item" data-video="highlights">
+                    <div class="item-inner">
+                        <img src="img/high.jpg" alt="Noticia1">
+                        <h3> Highlights </h3>
+
+                    </div>
+                </div>
+                <div class="item" data-video="Orlando_City_Foundation_2015">
+                    <div class="item-inner">
+                        <img src="img/Orlando_City_Foundation_2015.jpg" alt="Noticia1">
+                        <h3> Orlando City Foundation </h3>
+
+                    </div>
+                </div>
+
+            </div>
+
     </section>
     <footer>
-        <!-- Rodapé e links para referencia--> 
+        <!-- Rodapé e links para referencia-->
+
         <div class="row- row-cinza-claro">
             <div class="container">
 
                 <div class="row">
                     <div class="col-md-2 text-center">
                         <img class="logotipo" src="img/orlando-logo.png" alt="Logotipo">
-                        
                     </div>
+
                     <div class="col-md-10">
                         <div class="row row-cols">
                             <div class="col-md-4 popular">
@@ -128,16 +179,17 @@
                                 <h4>LINKS</h4>
 
                                 <Ul class="list-unstyled">
-                                <li><a href="#"><i class="fas fa-angle-right"></i>Tickets</a></li>
-                                <li><a href="#"><i class="fas fa-angle-right"></i>News</a></li>
-                                <li><a href="#"><i class="fas fa-angle-right"></i>Schedule</a></li>
+                                    <li><a href="#"><i class="fas fa-angle-right"></i>Tickets</a></li>
+                                    <li><a href="#"><i class="fas fa-angle-right"></i>News</a></li>
+                                    <li><a href="#"><i class="fas fa-angle-right"></i>Schedule</a></li>
                                 </Ul>
 
                             </div>
                             <div class="col-md-4 getin">
                                 <h4>GET IN TOUCH</h4>
                                 <address>
-                                    <i class="fa fa-map-marker"></i> <span>618 E. South Street, Suite 510 <br/> Orlando, FL 32801</span>
+                                    <i class="fa fa-map-marker"></i> <span>618 E. South Street, Suite 510 <br />
+                                        Orlando, FL 32801</span>
                                 </address>
 
                                 <p><a href="tel: 1855ORLCITY"><i class="fa fa-phone"></i>1.855.ORL.CITY</a></p>
@@ -151,14 +203,8 @@
                 </div>
 
             </div>
-
-
-
-
-
-
         </div>
-    
+
         <div class="row row-cinza-escuro">
             <div class="container">
 
@@ -172,49 +218,47 @@
     </footer>
 
 
-    <script src="lib/jquery/jquery-3.6.0.js"></script>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/plyr/src/js/plyr.js"></script>
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="lib/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="js/efeitos.js"></script>
     <script>
-        $(document).ready(function(){
-            $("#logotipo").on("mouseover",function(){
 
-                $("#banner h1").addClass("efeito");
+        $(function () {
+            $(".thubmnails .item").on("click", function () {
 
-              }) .on("mouseout",function(){
-
-                $("#banner h1").removeClass("efeito");
-              });
-                $("#input-search").on("focus",function(){
-
-                    $("li.search").addClass("ativo");
-                }) .on("blur",function(){
-
-                    $("li.search").removeClass("ativo");
-
+                $("video").attr({
+                    "src": "mp4/" + $(this).data('video') + ".mp4",
+                    "data-poster": "img/" + $(this).data("video") + ".jpg"
                 });
-                $(".thumbnails").owlCarousel({
-                    loop:true,
-                    margin: 12,
-                   // nav:true,
-                   // navText: ["Anterior", "Proximo"],
-                    responsive: {
-                        0 :{
-                            items:1
-                        },
-                        480:{
-                            items:3
-                        },
-                        1200: {
-                            items:4
 
-                        }
-                    }
-
-                });
             });
 
-        
+            $("#volume").on("mousemove", function () {
+
+                $("video")[0].volume = parseFloat($(this).val());
+
+            });
+
+            $("#btn-play-pause").on("click", function () {
+                var video = $("video")[0];
+
+                if ($(this).hasClass("btm-success")) {
+                    $(this).text("PAUSE");
+
+                    video.play();
+
+                } else {
+
+                    $(this).text("PLAY");
+                    video.pause();
+                }
+                $(this).toggleClass("btn-success btn-danger");
+            });
+            const player = new Plyr('#Player');
+
+        });
     </script>
 
 </body>

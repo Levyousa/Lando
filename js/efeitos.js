@@ -1,14 +1,6 @@
 
 $(document).ready(function () {
-    $("#logotipo").on("mouseover", function () {
-
-        $("#banner h1").addClass("efeito");
-
-    }).on("mouseout", function () {
-
-        $("#banner h1").removeClass("efeito");
-    });
-    $("#input-search").on("focus", function () {
+       $("#input-search").on("focus", function () {
 
         $("li.search").addClass("ativo");
     }).on("blur", function () {
@@ -35,5 +27,26 @@ $(document).ready(function () {
         }
 
     });
+    var owl = $('.owl-carousel');
+    owl.owlCarousel();
+
+    $('#seta-left').click(function () {
+        owl.trigger('prev.owl.carousel');
+    });
+
+    $('#seta-right').click(function () {
+        owl.trigger('next.owl.carousel');
+    });
+    $('#bars').click(function(){
+        $('header').toggleClass("open-menu");
+        
+    });
+    $('#close').click(function(){
+       $('header').removeClass("open-menu");
+    });
+
+
+    
+
 });
 

@@ -229,7 +229,7 @@ header #logotipo {
     padding: 10px;
 }
 #news .thumbnails .item-inner img{
-    width: 100;
+    width: 100%;
 }
 
 /*estatiscicas segunda barra roxa*/
@@ -410,4 +410,64 @@ footer .getin i{
 footer .getin p{
     line-height: 20px;
     color:#666;
+}
+footer .list-socials {
+	margin-top: 4px;
+}
+footer .list-socials li {
+	display: inline-block;
+	margin-right: 8px;
+}
+footer .list-socials a {
+	display: block;
+	
+	width: 28px;
+	height: 28px;
+	line-height: 28px;
+	
+	text-align: center;
+}
+footer .list-socials i {
+	font-size: 16px;
+	margin: 7px auto;
+}
+/* video */
+
+h2.latest-videos{
+
+    margin-top: 200px;
+}
+
+.video-player{
+
+    width: 60vw;
+}
+
+input#volume{
+    display: block;
+    width: 100%;
+}
+#banner h1.efeito {
+    color: red;
+    font-size: 12em;
+}
+#menu li.search.ativo{
+    width: 300px;
+}
+#menu li.search.ativo input{
+
+    width: 300px;
+}
+#news .thumbnails  .item-inner{
+    padding: 10px;
+}
+#news .thumbnails .item-inner{
+    width: 100%;
+}
+.item-inner img{
+    margin:  5px;
+    width:  260px;
+}
+#bars, #search, #seta-left, #seta-right, #menu-mobile{
+    display: none;
 }
