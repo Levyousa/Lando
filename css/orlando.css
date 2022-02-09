@@ -471,3 +471,96 @@ input#volume{
 #bars, #search, #seta-left, #seta-right{
     display: none;
 }
+/* Shop */
+.arial-cinza{
+    color: #666;
+    font-family: Arial;
+    font-size: 12px;
+}
+.text-roxo{
+    color: #6e3ea4;
+}
+#produtos-container{
+    position: relative;
+    margin-bottom: 100px;
+    
+}
+#destaque-prod{
+    margin: 20px auto;
+
+}
+#destaque-prod .col-imagem{
+    text-align: center;
+    width: 30%;
+    margin-top: 10px;
+}
+#btn-destaque-next{
+    position: absolute;
+    right: 0;
+    color: #5E299A;
+}
+#destaque-prod .col-descricao h2{
+    color: #666;
+    font-family: Arial;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+#destaque-prod .col-descricao .box-valor{
+    width: 100%;
+    position: relative;
+}
+#destaque-prod .col-descricao .box-valor .text-real{
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    top: 13px;
+    left: 25px;
+}
+#destaque-prod .col-descricao .box-valor .text-valor{
+    font-size: 50px;
+    position: absolute;
+    left: 50px;
+    top: -20px;
+} 
+#destaque-prod .col-descricao .box-valor .text-centavos{
+    font-size: 30px;
+    position: absolute;
+    left: 170px;
+    top: -10px;
+}
+#destaque-prod .col-descricao .box-valor .text-parcelas{
+    margin-top: 20px;
+}
+#destaque-prod .col-descricao .btn-compra{
+    font-size: 26px;
+    padding: 10px 0;
+}
+#destaque-prod .col-descricao .fa-shopping-cart{
+    font-size: 24px;
+}
+#btn-destaque-next{
+    position: absolute;
+    right: 0;
+    color: #5E299A;
+    border: none;
+    background: none;
+    font-size: 30px;
+    
+}
+#btn-destaque-prev{
+    position: absolute;
+    left: 0;
+    color: #5E299A;
+    border: none;
+    background: none;
+    font-size: 30px;
+    
+}
+
+#promocoes .box-promocao{
+    background-color: #6e3ea4;
+    width: 100%;
+    height: 150px;
+    position: relative;
+}

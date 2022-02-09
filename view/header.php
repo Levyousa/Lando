@@ -24,7 +24,7 @@
             <nav>
                 <ul class="list-unstyled">
                     <li><a href="videos">Videos</a></li>
-                    <li><a href="#"> Tickets</a></li>
+                    <li><a href="shop">Shop</a></li>
                     <li><a href="#"> News</a></li>
                     <li><a href="#"> Schedule</a></li>
                 </ul>
@@ -79,7 +79,7 @@
                 <ul>
                     <li><a href="index">Home</a></li>
                     <li><a href="videos">Videos</a></li>
-                    <li><a href="#"> Tickets</a></li>
+                    <li><a href="shop">Shop</a></li>
                     <li><a href="#"> News</a></li>
                     <li><a href="#"> Schedule</a></li>
                     <li class="search">
