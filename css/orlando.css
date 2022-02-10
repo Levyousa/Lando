@@ -3,124 +3,154 @@
     src: url("../fonts/Open_Sans/OpenSans-Regular.ttf");
     font-size: 1em;
 }
+
 @font-face {
-    font-family: 'OpenSans-Light'; 
+    font-family: 'OpenSans-Light';
     src: url("../fonts/Open_Sans/OpenSans-light.ttf");
     font-size: 1em;
 }
+
 /* parte de cabeçalhos, bandeira dos times */
-header{
+header {
     width: 100%;
     height: 150px;
     background-color: rgba(94, 41, 154, .8);
     z-index: 2;
     position: relative;
-    
+
 }
-header .container{
+
+header .container {
     position: relative;
-    
+
 }
-header .header-black{
+
+header .header-black {
     background-color: black;
     height: 40px;
 }
+
 header .header-black li {
     background-image: url("../img/clubes.png");
     background-repeat: no-repeat;
     display: inline-block;
     margin: 4px 5px;
 }
+
 header .header-black li.club-01 {
     background-position: 0px 0px;
 }
-header .header-black li.club-02{
+
+header .header-black li.club-02 {
     background-position: -48px;
 }
-header .header-black li.club-03{
+
+header .header-black li.club-03 {
     background-position: -90px;
 }
-header .header-black li.club-04{
+
+header .header-black li.club-04 {
     background-position: -140px;
 }
-header .header-black li.club-05{
+
+header .header-black li.club-05 {
     background-position: -190px;
 }
-header .header-black li.club-06{
+
+header .header-black li.club-06 {
     background-position: -240px;
 }
-header .header-black li.club-07{
+
+header .header-black li.club-07 {
     background-position: -290px;
 }
-header .header-black li.club-08{
+
+header .header-black li.club-08 {
     background-position: -335px;
 }
-header .header-black li.club-09{
+
+header .header-black li.club-09 {
     background-position: -380px;
 }
-header .header-black li.club-10{
+
+header .header-black li.club-10 {
     background-position: -430px;
 }
-header .header-black li.club-11{
+
+header .header-black li.club-11 {
     background-position: -480px;
 }
-header .header-black li.club-12{
+
+header .header-black li.club-12 {
     background-position: -530px;
 }
-header .header-black li.club-13{
+
+header .header-black li.club-13 {
     background-position: -580px;
 }
-header .header-black li.club-14{
+
+header .header-black li.club-14 {
     background-position: -630px;
 }
-header .header-black li.club-15{
+
+header .header-black li.club-15 {
     background-position: -675px;
 }
-header .header-black li.club-16{
+
+header .header-black li.club-16 {
     background-position: -722px;
 }
-header .header-black li.club-17{
+
+header .header-black li.club-17 {
     background-position: -765px;
 }
-header .header-black li.club-18{
+
+header .header-black li.club-18 {
     background-position: -807px;
 }
-header .header-black li.club-19{
+
+header .header-black li.club-19 {
     background-position: -856px;
 }
-header .header-black li.club-20{
+
+header .header-black li.club-20 {
     background-position: -948px;
 }
-header .header-black li.club-21{
+
+header .header-black li.club-21 {
     background-position: -999px;
 }
 
-header .header-black li a{
+header .header-black li a {
     width: 32px;
     height: 32px;
     display: block;
 }
+
 header #logotipo {
     position: absolute;
     top: 20px;
     z-index: 5;
 }
+
 /*Barra de pesquisa, cores e botoes */
 #menu li {
     margin: 6px;
     display: inline-block;
     font-family: "OpenSans";
 }
-#menu li.search{
+
+#menu li.search {
     width: 182px;
-    transition-timing-function: cubic-bezier(1,-.91,1.45, 1);
+    transition-timing-function: cubic-bezier(1, -.91, 1.45, 1);
     transition-duration: 1s;
 }
 
-#menu li.search.ativo{
+#menu li.search.ativo {
     width: 300px;
 }
-#menu li.search input{
+
+#menu li.search input {
     background-color: #5C2D90;
     color: white;
     border: none;
@@ -128,13 +158,16 @@ header #logotipo {
     line-height: 30px;
     margin-left: auto;
 }
-#menu li.search.ativo input{
+
+#menu li.search.ativo input {
     width: 300px;
 }
+
 #menu li.search ::-webkit-input-placeholder {
     color: white;
 }
-#menu li.search button{
+
+#menu li.search button {
     background: none;
     border: none;
     position: absolute;
@@ -142,23 +175,24 @@ header #logotipo {
     right: 2px;
     top: 0;
 }
-#menu li.search button i{
+
+#menu li.search button i {
     font-size: 15px;
-    color: rgba(255, 255, 255, .5 ); 
+    color: rgba(255, 255, 255, .5);
 }
 
-#menu li a{
+#menu li a {
     color: #fff;
     font-size: 16px;
     padding: 10px 25px;
     text-decoration: none;
-    
+
 }
 
 
 
 /*Banner, imagem da bola gigante no meio da sua tela kk*/
-#banner{
+#banner {
     width: 100%;
     height: 728px;
     position: relative;
@@ -167,117 +201,134 @@ header #logotipo {
     background-position: 0 -100px;
     background-size: cover;
 }
-#banner h1{
+
+#banner h1 {
     color: white;
     top: 300px;
     position: relative;
     font-size: 85px;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, .45) ;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .45);
     font-family: 'OpenSans-Light';
     margin-left: 50px;
     transition: 1s;
 
 }
-#banner h1.efeito{
-    color:red ;
-    font-size: 12em; 
-    
+
+#banner h1.efeito {
+    color: red;
+    font-size: 12em;
+
 }
 
-#banner h1 small{
-        font-size: 32px;
-        display: block;
-        color: white;
-        font-family: 'OpenSans';
-        font-weight:bold;
+#banner h1 small {
+    font-size: 32px;
+    display: block;
+    color: white;
+    font-family: 'OpenSans';
+    font-weight: bold;
 }
+
 /*Parte de noticias, onde o goleiro se repete 4x*/
-#news{
+#news {
     position: relative;
     top: -110px;
 }
 
-#news h2{
+#news h2 {
     color: #5E2799;
     font-family: "OpenSans-Light";
     font-size: 48px;
     text-transform: uppercase;
     text-align: center;
 }
-#news hr{
+
+#news hr {
     border: #FDE192 solid 8px;
     width: 200px;
     margin: 0 auto;
 }
-#news .thumbnails{
-  margin-top: 20px;
-  
+
+#news .thumbnails {
+    margin-top: 20px;
+
 }
-#news .thumbnails h3{
+
+#news .thumbnails h3 {
     color: #5E299A;
     font-size: 18px;
     font-family: "OpenSans";
     font-weight: bold;
     margin-bottom: 0;
 }
-#news .thumbnails time{
+
+#news .thumbnails time {
     color: #A7A;
     font-size: 18px;
     font-family: 'OpenSans';
 }
-#news .thumbnails .item-inner{
+
+#news .thumbnails .item-inner {
     padding: 10px;
 }
-#news .thumbnails .item-inner img{
+
+#news .thumbnails .item-inner img {
     width: 100%;
 }
 
 /*estatiscicas segunda barra roxa*/
-#estatisticas{
+#estatisticas {
     background-color: #5E299A;
     width: 100%;
     height: 200px;
     text-align: center;
 }
-#estatisticas .row{
+
+#estatisticas .row {
     width: 100%;
 }
-#estatisticas p{
+
+#estatisticas p {
     color: #FDE192;
     text-transform: uppercase;
     font-family: 'OpenSans-Light';
     font-size: 64px;
     margin-top: 16px;
 }
-#estatisticas p small{
+
+#estatisticas p small {
     color: #fff;
     font-size: 24px;
     display: block;
 }
-#call-to-action{
+
+#call-to-action {
     text-align: center;
     margin-top: 105px;
-    
+
 }
-#call-to-action .row{
+
+#call-to-action .row {
     padding-top: 15px;
     margin: 0px 340px;
-    
+
 }
+
 /*Mais informações sobre o time, compras e registros*/
-#call-to-action h2{
+#call-to-action h2 {
     color: #5E2799;
     font-family: "OpenSans-Light";
     font-size: 48px;
     text-align: center;
 }
-#call-to-action hr{
+
+#call-to-action hr {
     border: #FDE192 solid 8px;
     width: 200px;
     height: 0%;
     margin: 0 auto;
 }
-#call-to-action p{
+
+#call-to-action p {
     margin-top: 60px;
     margin-bottom: 40px;
     font-size: 14px;
@@ -285,82 +336,95 @@ header #logotipo {
     font-family: 'OpenSans';
 
 }
-#call-to-action .btn{
+
+#call-to-action .btn {
     min-width: 164px;
     height: 44px;
     border-radius: 0;
 
 }
+
 /*Botoes, roxo e amarelo*/
-#call-to-action .btn-roxo{
+#call-to-action .btn-roxo {
     color: #fff;
     background-color: #5E299A;
     border-color: #5e299a;
-    
-}
-#call-to-action .btn-amarelo{
-    color: #000;
-    background-color: #FDE192;
-    border-color: #FDE192;;
 
 }
-#call-to-action .row-max-400{
+
+#call-to-action .btn-amarelo {
+    color: #000;
+    background-color: #FDE192;
+    border-color: #FDE192;
+    ;
+
+}
+
+#call-to-action .row-max-400 {
     margin: 0 auto;
     max-width: 400px;
-} 
+}
 
 
 /*Rodape*/
 footer {
     margin-top: 110px;
 }
-footer .row{
+
+footer .row {
     width: 100%;
     margin-left: 0;
-    
+
 }
+
 footer .row p {
     line-height: 25px;
     margin-bottom: 0;
-    
-}
-footer .row-cinza-claro{
-      height: 200px;
-      background-color: #171f26;
 
 }
-footer .row-cinza-escuro{
+
+footer .row-cinza-claro {
+    height: 200px;
+    background-color: #171f26;
+
+}
+
+footer .row-cinza-escuro {
     height: 60px;
-    background-color:#11171D;
+    background-color: #11171D;
     border-top: #242D37 1px solid;
-    
+
 }
 
 /*Copyright e quem criou, (Levy, caso n saiba)*/
-footer .float-md-start{
+footer .float-md-start {
     font-family: 'OpenSans';
     font-size: 14px;
     color: #666;
     margin-bottom: 0%;
     float: left;
 }
-footer .text-roxo{
+
+footer .text-roxo {
     color: #623291;
     font-family: 'OpenSans';
     font-size: 14px;
     float: right;
 }
-footer .logotipo{
-    margin-top:  28px;
+
+footer .logotipo {
+    margin-top: 28px;
 
 }
+
 /*blocos de informacao*/
 footer .popular,
 footer .links,
-footer .getin{
+footer .getin {
     margin-top: 40px;
 
 }
+
 footer .row-cols h4 {
     margin-top: 10px;
     font-family: 'OpenSans';
@@ -369,198 +433,328 @@ footer .row-cols h4 {
     padding-bottom: 17px;
     border-bottom: #242D37 1px solid;
 }
-footer .row-cols h5{
+
+footer .row-cols h5 {
     font-family: 'Arial';
     font-size: 14px;
     color: #666;
     margin-bottom: 0;
 }
-footer .row-cols time{
+
+footer .row-cols time {
     font-family: 'Arial';
     font-size: 14px;
     color: #fde192;
 }
-footer .links a{
+
+footer .links a {
     font-family: Arial;
     font-size: 14px;
     color: #fff;
     text-decoration: none;
 }
+
 /*Endereco e telefone*/
 footer .getin address,
 footer .getin a {
-    color:#666;
+    color: #666;
     font-size: 14px;
     margin-bottom: 10px;
     text-decoration: none;
 }
 
-footer .getin address span{
+footer .getin address span {
     display: inline-block;
 }
-footer .getin address i{
+
+footer .getin address i {
     position: relative;
     top: -14px;
 }
-footer .getin i{
+
+footer .getin i {
     color: #9B9;
     font-size: 20px;
-    margin:0 6px;
+    margin: 0 6px;
 }
-footer .getin p{
+
+footer .getin p {
     line-height: 20px;
-    color:#666;
+    color: #666;
 }
+
 footer .list-socials {
-	margin-top: 4px;
+    margin-top: 4px;
 }
+
 footer .list-socials li {
-	display: inline-block;
-	margin-right: 8px;
+    display: inline-block;
+    margin-right: 8px;
 }
+
 footer .list-socials a {
-	display: block;
-	
-	width: 28px;
-	height: 28px;
-	line-height: 28px;
-	
-	text-align: center;
+    display: block;
+
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+
+    text-align: center;
 }
+
 footer .list-socials i {
-	font-size: 16px;
-	margin: 7px auto;
+    font-size: 16px;
+    margin: 7px auto;
 }
+
 /* video */
 
-h2.latest-videos{
+h2.latest-videos {
 
     margin-top: 200px;
 }
 
-.video-player{
+.video-player {
 
     width: 60vw;
 }
 
-input#volume{
+input#volume {
     display: block;
     width: 100%;
 }
+
 #banner h1.efeito {
     color: red;
     font-size: 12em;
 }
-#menu li.search.ativo{
+
+#menu li.search.ativo {
     width: 300px;
 }
-#menu li.search.ativo input{
+
+#menu li.search.ativo input {
 
     width: 300px;
 }
-#news .thumbnails  .item-inner{
+
+#news .thumbnails .item-inner {
     padding: 10px;
 }
-#news .thumbnails .item-inner{
+
+#news .thumbnails .item-inner {
     width: 100%;
 }
-.item-inner img{
-    margin:  5px;
-    width:  260px;
+
+.item-inner img {
+    margin: 5px;
+    width: 260px;
 }
-#bars, #search, #seta-left, #seta-right{
+
+#bars, #search, #seta-left, #seta-right {
     display: none;
 }
+
 /* Shop */
-.arial-cinza{
+.arial-cinza {
     color: #666;
     font-family: Arial;
     font-size: 12px;
 }
-.text-roxo{
+
+.text-roxo {
     color: #6e3ea4;
 }
-#produtos-container{
+
+#produtos-container {
     position: relative;
     margin-bottom: 100px;
-    
+
 }
-#destaque-prod{
+
+#destaque-prod {
     margin: 20px auto;
 
 }
-#destaque-prod .col-imagem{
+
+#destaque-prod .col-imagem {
     text-align: center;
     width: 30%;
+    margin-left: 150px;
     margin-top: 10px;
 }
-#btn-destaque-next{
+
+#btn-destaque-next {
     position: absolute;
     right: 0;
     color: #5E299A;
 }
-#destaque-prod .col-descricao h2{
+
+#destaque-prod .col-descricao h2 {
     color: #666;
     font-family: Arial;
     font-size: 20px;
     margin-bottom: 20px;
     margin-top: 10px;
 }
-#destaque-prod .col-descricao .box-valor{
+
+#destaque-prod .col-descricao .box-valor {
     width: 100%;
     position: relative;
 }
-#destaque-prod .col-descricao .box-valor .text-real{
+
+#destaque-prod .col-descricao .box-valor .text-real {
     font-size: 18px;
     font-weight: bold;
     position: absolute;
     top: 13px;
     left: 25px;
 }
-#destaque-prod .col-descricao .box-valor .text-valor{
+
+#destaque-prod .col-descricao .box-valor .text-valor {
     font-size: 50px;
     position: absolute;
     left: 50px;
     top: -20px;
-} 
-#destaque-prod .col-descricao .box-valor .text-centavos{
+}
+
+#destaque-prod .col-descricao .box-valor .text-centavos {
     font-size: 30px;
     position: absolute;
     left: 170px;
     top: -10px;
 }
-#destaque-prod .col-descricao .box-valor .text-parcelas{
+
+#destaque-prod .col-descricao .box-valor .text-parcelas {
     margin-top: 20px;
 }
-#destaque-prod .col-descricao .btn-compra{
+
+#destaque-prod .col-descricao .btn-compra {
     font-size: 26px;
     padding: 10px 0;
 }
-#destaque-prod .col-descricao .fa-shopping-cart{
+
+#destaque-prod .col-descricao .fa-shopping-cart {
     font-size: 24px;
 }
-#btn-destaque-next{
+
+#btn-destaque-next {
     position: absolute;
-    right: 0;
+    right: -15px;
     color: #5E299A;
     border: none;
     background: none;
     font-size: 30px;
-    
-}
-#btn-destaque-prev{
-    position: absolute;
-    left: 0;
-    color: #5E299A;
-    border: none;
-    background: none;
-    font-size: 30px;
-    
+    top: 140px;
+
 }
 
-#promocoes .box-promocao{
+#btn-destaque-prev {
+    position: absolute;
+    left: -15px;
+    color: #5E299A;
+    border: none;
+    background: none;
+    font-size: 30px;
+    top: 140px;
+
+}
+
+#promocoes .box-promocao {
     background-color: #6e3ea4;
     width: 100%;
     height: 150px;
     position: relative;
+    color: #fff;
+    text-align: center;
+}
+
+#promocoes .box-promocao.box-1 {
+    font-family: "Arial";
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+#promocoes .box-promocao.box-1 p {
+    padding-top: 60px;
+}
+
+#promocoes .box-promocao .text-ate {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Arial";
+    position: absolute;
+    left: 11px;
+    top: 5px;
+}
+
+#promocoes .box-promocao .text-numero {
+    font-size: 128px;
+    font-family: 'OpenSans-light';
+    position: absolute;
+    top: -10px;
+    left: 15px;
+}
+
+#promocoes .box-promocao .text-porcento {
+    font-size: 64px;
+    font-family: 'OpenSans';
+    position: absolute;
+    top: 65px;
+    left: 160px;
+}
+
+#promocoes .box-promocao .text-off {
+    font-size: 48px;
+    font-family: 'OpenSans-light';
+    font-weight: bold;
+    position: absolute;
+    left: 160px;
+    top: 20px;
+}
+
+.box-produto-info h3 {
+    font-size: 16px;
+    font-family: "Arial";
+    color: #666;
+
+
+}
+.box-produto-info a{
+    text-decoration: none;
+    text-align: center;
+}
+
+.box-produto-info .produto-img {
+    width: 100%;
+    position: relative;
+    left: 10px;
+
+}
+.box-produto-info .text-reviews{
+    font-size: 12px;
+
+}
+.box-produto-info .text-qtd-valor{
+    font-size: 26px;
+    color: #5E299A;
+    
+    
+}
+.box-produto-info .text-parc{
+    font-size: 12px;
+    
+}
+.title-default-roxo h2{
+    color: #5E2799;
+    font-family: 'OpenSans-Light';
+    font-size: 48px;
+    text-transform:uppercase;
+    text-align: center;
+}
+.title-default-roxo hr{
+    border: #fde192 solid 8px;
+    width: 200px;
+    margin: 0 auto;
 }

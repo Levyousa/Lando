@@ -111,6 +111,7 @@
 <script src="lib/owl.carousel/dist/owl.carousel.min.js"></script>
 <script src="lib/plyr/src/js/plyr.js"></script>
 <script src="js/efeitos.js"></script>
+<script src="lib/raty/lib/jquery.raty.js"></script>
 
 </script>
 </body>
