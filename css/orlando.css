@@ -752,9 +752,14 @@ input#volume {
     font-size: 48px;
     text-transform:uppercase;
     text-align: center;
+    margin-top: 35px;
 }
 .title-default-roxo hr{
-    border: #fde192 solid 8px;
+    border: #fde192 solid ;
     width: 200px;
     margin: 0 auto;
+    margin-bottom: 25px;
+}
+.row{
+    margin: auto;
 }

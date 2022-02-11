@@ -129,7 +129,7 @@
                     <a href="#">
                         <img src="img/produtos/panelas.png" alt="Panelas" class="produto-img">
                         <h3> Conjunto de 5 Panelas Tramontina Versalhes Aluminio Antiaderente </h3>
-                        <div class="estrelas"></div>
+                        <div class="estrelas" data-score="3"></div>
                         <div class="text-reviews arial-cinza">(250)</div>
                         <div class="text-qtd-valor text-roxo">R$199,99</div>
                         <div class="text-parc arial-cinza">10x de R$ 19,99 sem juros</div>
@@ -143,7 +143,7 @@
                     <a href="#">
                         <img src="img/produtos/fritadeira.png" alt="Panelas" class="produto-img">
                         <h3> Fritadeira Air Fryer Mondial Cor Prata </h3>
-                        <div class="estrelas"></div>
+                        <div class="estrelas" data-score="3.5"></div>
                         <div class="text-reviews arial-cinza">(100)</div>
                         <div class="text-qtd-valor text-roxo">R$399,99</div>
                         <div class="text-parc arial-cinza">10x de R$ 39,99 sem juros</div>
@@ -156,7 +156,7 @@
                     <a href="#">
                         <img src="img/produtos/panelas.png" alt="Panelas" class="produto-img">
                         <h3> Conjunto de 5 Panelas Tramontina Versalhes Aluminio Antiaderente </h3>
-                        <div class="estrelas"></div>
+                        <div class="estrelas" data-score="3"></div>
                         <div class="text-reviews arial-cinza">(250)</div>
                         <div class="text-qtd-valor text-roxo">R$199,99</div>
                         <div class="text-parc arial-cinza">10x de R$ 19,99 sem juros</div>
@@ -170,7 +170,7 @@
                     <a href="#">
                         <img src="img/produtos/fritadeira.png" alt="Panelas" class="produto-img">
                         <h3> Fritadeira Air Fryer Mondial Cor Prata </h3>
-                        <div class="estrelas"></div>
+                        <div class="estrelas" data-score="4"></div>
                         <div class="text-reviews arial-cinza">(100)</div>
                         <div class="text-qtd-valor text-roxo">R$399,99</div>
                         <div class="text-parc arial-cinza">10x de R$ 39,99 sem juros</div>
@@ -183,8 +183,8 @@
 </section>
 
 <?php include_once("footer.php") ?>
-
 <script>
+    
     $("#destaque-prod").owlCarousel({
 
         autoplay: 10000,
@@ -206,10 +206,16 @@
     $('#btn-destaque-next').on("click", function() {
         owl.trigger('next.owl.carousel');
     });
-    $('.estrelas').raty({
-        starHalf:	'lib/raty/lib/images/star-half.png',
-        starOff:	'lib/raty/lib/images/star-off.png',
-        starOn:	'lib/raty/lib/images/star-on.png',
-        score: 4
+
+    $('.estrelas').each(function() {
+
+
+        $(this).raty({
+            starHalf: 'lib/raty/lib/images/star-half.png',
+            starOff: 'lib/raty/lib/images/star-off.png',
+            starOn: 'lib/raty/lib/images/star-on.png',
+            score: parseFloat($(this).data("score"))
+        });
+
     });
 </script>
