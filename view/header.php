@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="shop">
 
 <head>
     <!-- Scripts e links para criação do site-->
@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="lib/owl.carousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="lib/owl.carousel/dist/assets/owl.theme.default.min.css">
     <script src="https://kit.fontawesome.com/f1b9615bd9.js" crossorigin="anonymous"></script>
+
+    <script src="lib/angular/angular.min.js"></script>
    
 
 </head>

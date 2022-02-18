@@ -28,6 +28,7 @@ $(document).ready(function () {
 
     });
     /*Setas das noticias*/
+    /*
     var owl = $('.owl-carousel');
     owl.owlCarousel();
 
@@ -38,6 +39,7 @@ $(document).ready(function () {
     $('#seta-right').click(function () {
         owl.trigger('next.owl.carousel');
     });
+    */
 
     /*botões no mobile*/
     $('#bars').click(function () {
